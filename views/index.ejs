@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
     <title>Mhoob Bible</title>
-  
+
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
     <!-- IonIcons -->
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
     <!-- Google Font: Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="wrapper">
-      <%- include('nav') %>
+      <%- include('nav') %> 
       <%- include('sidebar') %>
+      
     </div>
-
-
-
-
-
-
-
-
-
-
 
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -42,5 +40,10 @@
     <script src="plugins/chart.js/Chart.min.js"></script>
     <script src="dist/js/demo.js"></script>
     <script src="dist/js/pages/dashboard3.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".main-sidebar").height($(document).outerHeight());
+      });
+    </script>
   </body>
 </html>
