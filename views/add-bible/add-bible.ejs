@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Mhoob Bible</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- IonIcons -->
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <%- include('../nav') %> <%- include('../sidebar') %>
+      <div class="content-wrapper p-5">
+        <h4>เพิ่มพระคัมภีร์</h4>
+        <div class="row ml-3 mt-3">
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">ชื่อพระคัมภีร์</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="ชื่อพระคัมภีร์"
+                />
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">จำนวนบทพระคัมภีร์</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput2"
+                  placeholder="จำนวนบทพระคัมภีร์"
+                />
+              </div>
+              <button type="submit" class="btn btn-secondary">
+                เพิ่มพระคัมภีร์
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row ml-3 mt-5">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">
+                  ปฐมกาล
+                </h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body text-align">
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>บทที่</th>
+                      <th>จำนวนข้อพระคัมภีร์</th>
+                      <th>ลบ / เพิ่มเนื้อหา</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                
+                      <td>1</td>
+                      <td>55</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>43</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>34</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>33</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>46</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>24</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>31</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>44</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>56</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE -->
+    <script src="dist/js/adminlte.js"></script>
+
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <script src="dist/js/demo.js"></script>
+    <script src="dist/js/pages/dashboard3.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".main-sidebar").height($(document).outerHeight());
+      });
+    </script>
+  </body>
+</html>
